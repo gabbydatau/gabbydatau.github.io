@@ -124,7 +124,7 @@ textarea {
 .img{
 	-webkit-transition: width 20s ease-in-out, -webkit-transform 20s ease-in-out;
 	   -moz-transition: width 20s ease-in-out, -moz-transform 20s ease-in-out;
-	        transition: width 20s ease-in-out, transform 20s ease-in-out;}
+	        transition: width 20s ease-in-out, transform 20s ease-in-out;} !important;
 	
 
 .img:hover{
@@ -133,7 +133,7 @@ textarea {
 	-ms-transform: rotate(360deg); /* IE 9 */
 	-moz-transform: rotate(360deg); /* IE 9 */
 	-webkit-transform: rotate(360deg); /* Safari and Chrome */
-}
+} !important;
 
 
 
