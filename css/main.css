@@ -129,12 +129,14 @@ textarea {
 
 	
 .img{
-  transition: transform .7s ease-in-out;} !important;
+  transition: transform .2s ease-in-out;} !important;
 	
 
 .img:hover{
-  transform: rotate(360deg);
-  cursor: move;} !important;
+    cursor: move;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+} !important;
 
 
 
