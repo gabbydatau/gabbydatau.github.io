@@ -132,7 +132,8 @@ textarea {
 	
 
 .img:hover{
-  transform: rotate(360deg);} !important;
+  transform: rotate(360deg);
+  cursor: move;} !important;
 
 
 
