@@ -17,12 +17,12 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: none;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: none;
     text-shadow: none;
 }
 
@@ -80,7 +80,8 @@ textarea {
 	position: absolute;
 	cursor: move;
 	top: 0;
-	left: 0;}
+	left: 0;
+	background: none;}
 
 .draggable{
 	position: absolute;
