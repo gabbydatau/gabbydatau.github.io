@@ -61,9 +61,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.template-fixed{
-	position: fixed;
-	z-index: 99999;
+.template-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    width: 100px; /* or adjust to suit */
 }
 
 #mail{
@@ -83,11 +86,18 @@ textarea {
 	left: 0;
 	background: none;}
 
-.draggable{
-	position: absolute;
-	cursor: move;
-	top: 0;
-	left: 0;}
+
+.draggable {
+    position: absolute;
+    cursor: move;
+}
+
+.seven {
+    z-index: 7;
+    width: 144px;
+    top: 100px;
+    left: 100px;
+}
 	
 
 .one{
@@ -123,21 +133,16 @@ textarea {
 	width: 480px;
 	top: 100px;
 	left: 100px;}
-.seven{
-	z-index: 7;
-	width: 144px;}
 
 	
-.img{
-  transition: transform .2s ease-in-out;} !important;
-	
+.img {
+  transition: transform 0.2s ease-in-out !important;
+}
 
-.img:hover{
-    cursor: move;
-    transform: rotate(360deg);
-    transition: all 0.1s ease-in-out 0s;
-} !important;
-
+.img:hover {
+  cursor: move !important;
+  transform: rotate(360deg) !important;
+  transition: all 0.1s ease-in-out 0s !important;
 
 
 
