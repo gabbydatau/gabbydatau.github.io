@@ -136,6 +136,7 @@ textarea {
 
 	
 .img {
+	 position: absolute;
   transition: transform 0s ease-in-out !important;
 }
 
