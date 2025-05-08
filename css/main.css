@@ -136,13 +136,13 @@ textarea {
 
 	
 .img {
-  transition: transform 0.2s ease-in-out !important;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 .img:hover {
   cursor: move !important;
   transform: rotate(360deg) !important;
-  transition: all 0.1s ease-in-out 0s !important;
+  transition: all 0.5s ease-in-out 0s !important;
 
 
 
