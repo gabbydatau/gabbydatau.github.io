@@ -136,7 +136,7 @@ textarea {
 
 	
 .img {
-  transition: transform 0.5s ease-in-out !important;
+  transition: transform 0s ease-in-out !important;
 }
 
 .img:hover {
