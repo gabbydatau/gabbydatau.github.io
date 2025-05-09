@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Draggable Image</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="/css/normalize.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+  <meta charset="utf-8">
+  <title>Draggable Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        #draggable { width: 100%; height: 100%; padding: 0.5em; }
-    </style>
+  <link rel="stylesheet" href="/css/normalize.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
-    <script>
-        var scrl = "GD ";
-        function scrlsts() {
-            scrl = scrl.substring(1) + scrl.charAt(0);
-            document.title = scrl;
-            setTimeout(scrlsts, 300);
-        }
+  <style>
+    .draggable {
+      position: absolute;
+      cursor: move;
+      width: 200px; /* adjust as needed */
+    }
 
-$(function() {
-    $("#draggable").draggable();
-});
-        });
-    </script>
+    /* Optional: stagger start positions */
+    .seven { top: 50px; left: 50px; }
+    .one   { top: 150px; left: 200px; }
+    .three { top: 250px; left: 350px; }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+  <script>
+    var scrl = "GD ";
+    function scrlsts() {
+      scrl = scrl.substring(1) + scrl.charAt(0);
+      document.title = scrl;
+      setTimeout(scrlsts, 300);
+    }
+
+    $(function() {
+      $(".draggable").draggable(); // Apply to each image
+    });
+  </script>
 </head>
 <body onload="scrlsts()">
 
-    <img id="circle" class="template-fixed" src="/img/gabbydatau-logo.png">
+  <img id="circle" class="template-fixed" src="/img/gabbydatau-logo.png">
 
-<div id="draggable" class="ui-widget-content">
-  <img class="img seven draggable" src="/img/gabbydatau-07.png">
-  <img class="img one draggable" src="/img/gabbydatau-01.jpg">
-  <img class="img three draggable" src="/img/gabbydatau-03.jpg">
-</div>
+  <img class="img seven draggable" src="/img/gabbydatau-07.png" alt="07">
+  <img class="img one draggable" src="/img/gabbydatau-01.jpg" alt="01">
+  <img class="img three draggable" src="/img/gabbydatau-03.jpg" alt="03">
 
 </body>
 </html>
